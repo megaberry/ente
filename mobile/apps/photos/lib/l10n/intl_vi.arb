@@ -807,6 +807,15 @@
       }
     }
   },
+  "yourStorageIsLimitedTo": "Dung lượng của bạn tối đa {limit}",
+  "@yourStorageIsLimitedTo": {
+    "placeholders": {
+      "limit": {
+        "type": "String",
+        "example": "50 GB"
+      }
+    }
+  },
   "storageLimitExplanation": "Đặt dung lượng lưu trữ tối đa mà thành viên này có thể sử dụng. Họ sẽ không thể tải lên nữa khi đạt đến giới hạn.",
   "limit": "Giới hạn",
   "noLimit": "Không giới hạn",
@@ -1214,6 +1223,16 @@
   "clickOnTheOverflowMenu": "• Nhấn vào menu xổ xuống",
   "click": "• Nhấn",
   "nothingToSeeHere": "Ở đây không có gì để xem! 👀",
+  "addANameAndPhoto": "Thêm tên và ảnh",
+  "photosSharedByWillAppearHere": "Ảnh mà {email} đã chia sẻ sẽ xuất hiện ở đây.",
+  "@photosSharedByWillAppearHere": {
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "a@test.test"
+      }
+    }
+  },
   "selectFoldersToBackup": "<action>Chọn các thư mục</action> để xem\nvà sao lưu trên ente.",
   "unarchiveAlbum": "Bỏ lưu trữ album",
   "archiveAlbum": "Lưu trữ album",
@@ -1733,8 +1752,14 @@
   "editEmailAlreadyLinked": "Email này đã được liên kết với {name} trước.",
   "viewPersonToUnlink": "Xem {name} để hủy liên kết",
   "enterName": "Nhập tên",
+  "editContact": "Sửa liên hệ",
+  "autoFetchFromPeople": "Lấy tự động từ mọi người",
+  "useTheirNameAndPhoto": "Dùng tên và ảnh của họ",
   "savePerson": "Lưu người",
+  "saveContact": "Lưu liên hệ",
   "editPerson": "Chỉnh sửa người",
+  "enterDateOfBirthHint": "Nhập ngày sinh",
+  "setAContactPhoto": "Đặt làm ảnh liên hệ",
   "mergedPhotos": "Hợp nhất ảnh",
   "orMergeWithExistingPerson": "Hoặc hợp nhất với hiện có",
   "enterDateOfBirth": "Sinh nhật (tùy chọn)",
@@ -2358,11 +2383,11 @@
   "spotlightOnThem": "Tập trung vào {name}",
   "personIsAge": "{name} đã {age} tuổi!",
   "personTurningAge": "{name} sắp {age} tuổi",
-  "lastTimeWithThem": "Lần cuối với {name}",
+  "throwbackWithThem": "Ngược thời gian cùng {name}",
   "unnamedPeopleSpotlight": "Khuôn mặt giống",
   "unnamedPeopleYouAndThem": "Cả hai",
   "unnamedPeopleDoingSomethingTogether": "Làm gì đó với nhau",
-  "unnamedPeopleLastTimeYouSawThem": "Lần cuối bên nhau",
+  "unnamedPeopleThrowbackTogether": "Mãi mãi bên nhau",
   "tripToLocation": "Phượt ở {location}",
   "tripInYear": "Phượt năm {year}",
   "lastYearsTrip": "Phượt năm ngoái",
@@ -2430,6 +2455,7 @@
   "thisWeek": "Tuần này",
   "lastWeek": "Tuần trước",
   "thisMonth": "Tháng này",
+  "lastMonth": "Tháng trước",
   "thisYear": "Năm nay",
   "groupBy": "Phân nhóm theo",
   "groupByDay": "Ngày",
@@ -2964,6 +2990,10 @@
   "@couldNotLoadAlbums": {
     "description": "Error when albums fail to load"
   },
+  "couldNotLoadSelectedPhoto": "Không thể tải ảnh đã chọn",
+  "@couldNotLoadSelectedPhoto": {
+    "description": "Toast when the selected contact photo cannot be loaded"
+  },
   "albumsCount": "{count, plural, =1{1 album} other{{count} album}}",
   "@albumsCount": {
     "description": "Number of albums with pluralization",
@@ -3037,6 +3067,9 @@
   "moreThanJustAGallery": "Nhiều hơn một thư viện ảnh.",
   "encryptedBackupDescription": "Sao lưu được mã hóa, tìm kiếm thông minh, liên kết có thể chia sẻ và đồng bộ hóa liền mạch trên tất cả các thiết bị của bạn.",
   "getStarted": "Bắt đầu",
+  "offlineHomeSignupBannerTitle": "Bảo vệ vĩnh viễn kỷ niệm của bạn",
+  "offlineHomeSignupBannerDescription": "Sao lưu mã hóa với 3 địa điểm để giữ kỷ niệm của bạn luôn an toàn.",
+  "offlineHomeSignupBannerAction": "Sao lưu ngay",
   "unlockSmartFeatures": "Mở khóa các tính năng thông minh",
   "enableOnDeviceMLDescription": "Bật ML trên thiết bị để tìm kiếm theo khuôn mặt, địa điểm, v.v. Ảnh của bạn không bao giờ rời khỏi thiết bị của bạn.",
   "offlineEnableSharingTitle": "Bắt đầu chia sẻ ở đây",
