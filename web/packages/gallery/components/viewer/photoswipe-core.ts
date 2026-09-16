@@ -144,6 +144,24 @@ export class FileViewerPhotoSwipe<
             pinchToClose: !disableGestureClose,
             closeOnVerticalDrag: !disableGestureClose,
             wheelToZoom: true,
+            // PhotoSwipe caps its default "fit" zoom at 1, leaving low-resolution
+            // videos at their encoded size even when the viewport is larger.
+            initialZoomLevel: (zoomLevel) => {
+                const { elementSize, itemData, panAreaSize } = zoomLevel;
+                if (
+                    (itemData as ItemData).fileType != FileType.video ||
+                    !elementSize?.x ||
+                    !elementSize.y ||
+                    !panAreaSize
+                ) {
+                    return zoomLevel.fit;
+                }
+
+                return Math.min(
+                    panAreaSize.x / elementSize.x,
+                    panAreaSize.y / elementSize.y,
+                );
+            },
             // PhotoSwipe's focus trap conflicts with MUI drawers and fast swipes.
             trapFocus: false,
             index: initialIndex,
